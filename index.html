@@ -63,8 +63,12 @@
         <!-- we would greatly appreciate if you link cables somewhere on your site! and tell us your website! thanks <3 :) -->
     </footer>
 
-    
-    <script type="text/javascript" src="js/patch.js" async></script>
+    <script type="text/javascript"  src="js/platform.js"></script>
+
+    <script type="text/javascript" src="js/libs.core.min.js"></script>
+<script type="text/javascript" src="js/cables.min.js"></script>
+<script type="text/javascript" src="js/ops.js"></script>
+
     
 
     <script>
@@ -83,7 +87,7 @@
 
         document.addEventListener('CABLES.jsLoaded', function (event) {
             CABLES.patch = new CABLES.Patch({
-                patch: CABLES.exportedPatch,
+                patchFile: 'js/copy_of__browserinfo.json',
                 "prefixAssetPath": "",
                 "glCanvasId": "glcanvas",
                 "glCanvasResizeToWindow": true,
